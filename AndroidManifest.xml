@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+        package="com.brobwind.bronil">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:label="@string/app_label"
+        android:process="com.brobwind.bronil">
+
+        <activity android:name=".NilActivity"
+                android:label="@string/app_label"
+                android:theme="@android:style/Theme.DeviceDefault.Light">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+         </activity>
+
+        <service android:name=".ProxyService"
+            android:exported="true">
+        </service>
+
+    </application>
+</manifest>
