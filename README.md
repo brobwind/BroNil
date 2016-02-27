@@ -20,7 +20,7 @@ A simple local http proxy server run in Android device
    a. Select a connected wifi to modify its network
    b. In advanced options, use manual proxy settings
    c. Set proxy name to "127.0.0.1" or "localhost" and port to 8182
-	
+
  Open Chrome, check the proxy settings by:
 	chrome://net-internals/#proxy
 
